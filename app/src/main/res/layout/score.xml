@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/congrats_you_have_passed"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/score_tXt"/>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content">
+       <com.google.android.material.progressindicator.CircularProgressIndicator
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/score_progress_indicator"
+           android:layout_centerVertical="true"
+           app:trackColor="#FF9800"
+           android:progress="60"
+           app:trackCornerRadius="20dp"
+           app:trackThickness="8dp"
+           app:indicatorSize="90dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/_50"
+           android:textSize="18sp"
+           android:layout_centerInParent="true"
+           android:textStyle="bold"
+           android:id="@+id/score_progress_text"/>
+   </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_6_out_of_10_questions_are_correct"
+        android:gravity="center"
+        android:id="@+id/score_subtitle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/orenge"
+        android:layout_margin="8dp"
+        android:id="@+id/finish_bTn"/>
+</LinearLayout>
